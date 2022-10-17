@@ -1168,3 +1168,59 @@ Ok, one module loaded.
 [?1h=>>> >>> :q
 [?1l>Leaving GHCi.
 ]0;misaki@LAPTOP-3MI9ERHJ: ~/cs2022[01;32mmisaki@LAPTOP-3MI9ERHJ[00m:[01;34m~/cs2022[00m$ gint[K[Kt add /[K.
+]0;misaki@LAPTOP-3MI9ERHJ: ~/cs2022[01;32mmisaki@LAPTOP-3MI9ERHJ[00m:[01;34m~/cs2022[00m$ git commit -m "add upto stdin 1-3"[C[1P1-3"-1-3"[C[C[C
+[main d001418] add upto stdin-1-3
+ 3 files changed, 831 insertions(+), 5 deletions(-)
+]0;misaki@LAPTOP-3MI9ERHJ: ~/cs2022[01;32mmisaki@LAPTOP-3MI9ERHJ[00m:[01;34m~/cs2022[00m$ push[K[K[K[Kgo[Kit push
+Enumerating objects: 13, done.
+Counting objects:   7% (1/13)Counting objects:  15% (2/13)Counting objects:  23% (3/13)Counting objects:  30% (4/13)Counting objects:  38% (5/13)Counting objects:  46% (6/13)Counting objects:  53% (7/13)Counting objects:  61% (8/13)Counting objects:  69% (9/13)Counting objects:  76% (10/13)Counting objects:  84% (11/13)Counting objects:  92% (12/13)Counting objects: 100% (13/13)Counting objects: 100% (13/13), done.
+Delta compression using up to 8 threads
+Compressing objects:  16% (1/6)Compressing objects:  33% (2/6)Compressing objects:  50% (3/6)Compressing objects:  66% (4/6)Compressing objects:  83% (5/6)Compressing objects: 100% (6/6)Compressing objects: 100% (6/6), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 4.33 KiB | 739.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/3)[Kremote: Resolving deltas:  33% (1/3)[Kremote: Resolving deltas:  66% (2/3)[Kremote: Resolving deltas: 100% (3/3)[Kremote: Resolving deltas: 100% (3/3), completed with 3 local objects.[K
+To github.com:misakidesu/cs2022
+   30cb314..d001418  main -> main
+]0;misaki@LAPTOP-3MI9ERHJ: ~/cs2022[01;32mmisaki@LAPTOP-3MI9ERHJ[00m:[01;34m~/cs2022[00m$ Script started on 2022-10-17 10:54:24+09:00 [TERM="xterm-256color" TTY="/dev/pts/3" COLUMNS="139" LINES="10"]
+]0;misaki@LAPTOP-3MI9ERHJ: ~/cs2022[01;32mmisaki@LAPTOP-3MI9ERHJ[00m:[01;34m~/cs2022[00m$ lgj[Khci[K[K[K[K[Kstack build
+[0mcs2022-0.1.0.0: unregistering (local file changes: app/Main.hs src/TemplateAlgo.hs)[0m
+[0mcs2022> build (lib + exe)[0m
+[0mPreprocessing library for cs2022-0.1.0.0..[0m
+[0mBuilding library for cs2022-0.1.0.0..[0m
+[0m[3 of 3] Compiling TemplateAlgo[0m
+[0mPreprocessing executable 'cs2022' for cs2022-0.1.0.0..[0m
+[0mBuilding executable 'cs2022' for cs2022-0.1.0.0..[0m
+[0m[2 of 2] Compiling Main[0m
+[0m[0m
+[0m/home/misaki/cs2022/[;1mapp/Main.hs:43:11: [;1m[31merror:[0m[0m[;1m[0m[0m[;1m[0m
+[0m    • Variable not in scope: errer :: [Char] -> String[0m
+[0m    • Perhaps you meant ‘error’ (imported from Prelude)[0m[0m[0m
+[0m[;1m[34m   |[0m[0m[0m
+[0m[;1m[34m43 |[0m[0m     [] -> [;1m[31merrer[0m[0m "invalid input"[0m
+[0m[;1m[34m   |[0m[0m[;1m[31m           ^^^^^[0m[0m[0m
+[0m[0m[0m[0m[0m
+[0m
+--  While building package cs2022-0.1.0.0 (scroll up to its section to see the error) using:
+      /home/misaki/.stack/setup-exe-cache/x86_64-linux-tinfo6/Cabal-simple_mPHDZzAJ_3.2.1.0_ghc-8.10.7 --builddir=.stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0 build lib:cs2022 exe:cs2022 --ghc-options " -fdiagnostics-color=always"
+    Process exited with code: ExitFailure 1[0m
+]0;misaki@LAPTOP-3MI9ERHJ: ~/cs2022[01;32mmisaki@LAPTOP-3MI9ERHJ[00m:[01;34m~/cs2022[00m$ stack build
+[0mcs2022> build (lib + exe)[0m
+[0mPreprocessing library for cs2022-0.1.0.0..[0m
+[0mBuilding library for cs2022-0.1.0.0..[0m
+[0mPreprocessing executable 'cs2022' for cs2022-0.1.0.0..[0m
+[0mBuilding executable 'cs2022' for cs2022-0.1.0.0..[0m
+[0m[2 of 2] Compiling Main[0m
+[0m[0m
+[0m/home/misaki/cs2022/[;1mapp/Main.hs:41:1: [;1m[35mwarning:[0m[0m[;1m [[;1m[35m-Woverlapping-patterns[0m[0m[;1m][0m[0m[;1m[0m
+[0m    Pattern match is redundant[0m
+[0m    In an equation for ‘func’: func input = ...[0m[0m[0m
+[0m[;1m[34m   |[0m[0m[0m
+[0m[;1m[34m41 |[0m[0m [;1m[35mfunc input = case words input of[0m[0m[0m
+[0m[;1m[34m   |[0m[0m[;1m[35m ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^...[0m[0m[0m
+[0mLinking .stack-work/dist/x86_64-linux-tinfo6/Cabal-3.2.1.0/build/cs2022/cs2022 ...[0m
+[0m[0m[0m[0m[0m
+[0mcs2022> copy/register[0m
+[0mInstalling library in /home/misaki/cs2022/.stack-work/install/x86_64-linux-tinfo6/d0011aa4064533e840eef975154b38991e3a4131cfc302aa5ead5f4f6fec9c11/8.10.7/lib/x86_64-linux-ghc-8.10.7/cs2022-0.1.0.0-BUCyn38qLb36zUXpKHew9j[0m
+[0mInstalling executable cs2022 in /home/misaki/cs2022/.stack-work/install/x86_64-linux-tinfo6/d0011aa4064533e840eef975154b38991e3a4131cfc302aa5ead5f4f6fec9c11/8.10.7/bin[0m
+[0mRegistering library for cs2022-0.1.0.0..[0m
+]0;misaki@LAPTOP-3MI9ERHJ: ~/cs2022[01;32mmisaki@LAPTOP-3MI9ERHJ[00m:[01;34m~/cs2022[00m$ stac[K[K[K[Kgit add .

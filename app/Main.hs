@@ -10,6 +10,9 @@ main :: IO ()
 main = interact func
 
 func :: String -> String
+func input = undefined
+
+
 
 -- func :: String -> String
 -- func input = unlines ["Hello Algo-method!"]
@@ -37,4 +40,10 @@ func :: String -> String
 
 func input = case words input of
     s:_ -> unlines [concat (replicate 3 s)]
-    [] -> errer "invalid input"
+    [] -> error "invalid input"
+
+    -- func input = case map words (lines input) of
+    --     [[s]] -> unlines [[s !! 2]]
+
+func input = case map (map readInt . words) (lines input) of
+    [[x]] -> unlines [showInt (24 - x)]
